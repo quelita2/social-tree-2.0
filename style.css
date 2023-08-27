@@ -76,6 +76,7 @@ body * {
 
 #switch button:hover {
   cursor: pointer;
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch button {
@@ -88,16 +89,14 @@ body * {
   /* Sobreposição de elementos */
   position: absolute;
   top: 50%;
-  left: 0;
   z-index: 1; /*altera os andares de sobreposição*/
-  transform: translateY(
-    -50%
-  ); /* movimenta o elemento para cima ou para baixo em relação ao eixo Y da prórpia imagem*/
+  transform: translateY(-50%); /* movimenta o elemento para cima ou para baixo em relação ao eixo Y da prórpia imagem*/
+
+  animation: slide-back 0.2s;
 }
 
-.light #switch button {
-  right: 0;
-  left: initial;
+.light #switch button { /* ativa a animação */
+  animation: slide-in 0.4s forwards; /* nome do identificador / tempo de execução / regra para manter as propriedades definidas no To*/
 }
 
 #switch span {
@@ -178,7 +177,7 @@ footer {
   font-size: 14px;
 }
 
-/* media queries */
+/* Media Queries */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -186,5 +185,24 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* Animation */
+@keyframes slide-in {
+  from { /* de onde vai começar a animação */
+    left: 0;
+  } 
+  to { /* até onde vai terminar a animação */
+    left: 50%;
+  } 
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
