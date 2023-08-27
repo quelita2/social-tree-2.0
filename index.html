@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- HTML 5 -->
+
+<html lang="pt-br">
+  <!-- Configurações e cabeçalho do site -->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <!-- Ajuda a viewport (conteúdo visível do site) na escala e proporção da tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Aplicando estilização ao site relacionado a este codigo -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Conteúdo e estrutura do site -->
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/WhatsApp Image 2021-09-17 at 10.27.12.jpeg"
+          alt="Profile Quelita"
+        />
+        <p>@quelitamiriam</p>
+      </div>
+      <!-- onclick dispara eventos por meio do click, nesse caso chama uma função do javascript para fazer a inteligência do site -->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="https://github.com/quelita2" target="_blank">
+            Ver meu portifólio
+          </a>
+        </li>
+        <li>
+          <a href=""> Baixar meu e-book </a>
+        </li>
+        <li>
+          <a href="https://rocketseat.com.br/explorer" target="_blank">
+            Se tornar um dev!
+          </a>
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/quelita2" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://instagram.com/quelitamiriam" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://youtube.com.br" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://linkedin.com/in/quelitamiriam" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <!-- Tag de rodapé -->
+      <footer>Feito com ♥ por Quelita Míriam.</footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
