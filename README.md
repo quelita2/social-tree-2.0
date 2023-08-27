@@ -49,4 +49,6 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Quelita Míriam :wave:
+<p align="center">
+  Feito com ♥ by Quelita Míriam :wave:
+</p>
